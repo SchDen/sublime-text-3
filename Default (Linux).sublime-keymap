@@ -1,0 +1,65 @@
+[
+    // Vintage mode
+    { "keys": ["ctrl+s"], "command": "run_multiple_commands",
+        "args": {
+            "commands":
+            [
+                {"command": "save"},
+                {"command": "exit_visual_mode"},
+                {"command": "exit_insert_mode"},
+                {"command": "hide_auto_complete"},
+            ]
+        }
+    },
+    { "keys": ["ctrl+c"], "command": "run_multiple_commands",
+        "args": {
+            "commands":
+            [
+                {"command": "exit_insert_mode"},
+                {"command": "exit_visual_mode"},
+                {"command": "exit_insert_mode"},
+                {"command": "hide_auto_complete"},
+            ]
+        }
+    },
+
+
+    // Переход между вкладками
+    { "keys": ["ctrl+alt+]"], "command": "next_view" },
+    { "keys": ["ctrl+alt+["], "command": "prev_view" },
+
+    // { "keys": ["ctrl+c"], "command": "exit_insert_mode",
+    //     "context":
+    //     [
+    //         { "key": "setting.command_mode", "operand": false },
+    //         { "key": "setting.is_widget", "operand": false }
+    //     ]
+    // },
+
+    { "keys": ["alt+t"], "command": "run_macro_file", "args": {"file": "Packages/User/mymacro/console.log.sublime-macro"} },
+    // Diff tool - Meld
+    { "keys": ["alt+f2"], "command": "git_diff_tool" },
+    // Установка маркера
+    { "keys": ["ctrl+m"], "command": "toggle_bookmark" },
+    { "keys": ["ctrl+super+alt+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+
+    // PHPUnit run
+    { "keys": ["alt+t"], "command": "build", "args": {"variant": "file"} },
+    { "keys": ["alt+a"], "command": "build", "args": {"variant": "all"} },
+
+    { "keys": ["ctrl+["], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["ctrl+]"], "command": "focus_group", "args": { "group": 1 } },
+
+
+    { "keys": ["ctrl+i"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+
+    // GoTo definition
+    { "keys": ["ctrl+super+d"], "command": "goto_definition" },
+
+    { "keys": ["ctrl+super+n"], "command": "move", "args": {"by": "lines", "forward": false} },
+    { "keys": ["ctrl+super+p"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+    { "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["super+n"], "command": "new_file" },
+]
+
