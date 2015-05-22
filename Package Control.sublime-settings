@@ -4,9 +4,12 @@
 	],
 	"installed_packages":
 	[
+		"Alignment",
 		"All Autocomplete",
+		"ApplySyntax",
 		"AutoFileName",
 		"BracketHighlighter",
+		"CTags",
 		"DocBlockr",
 		"EasyMotion",
 		"Emmet",
@@ -20,6 +23,7 @@
 		"SublimeLinter",
 		"SublimeLinter-jshint",
 		"SyncedSideBar",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"Zen Tabs"
 	]
 }
